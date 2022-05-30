@@ -1,0 +1,7 @@
+.git
+.DS-Store
+.idea
+*.DS-Store
+.DS_Store
+*.pyc
+.env
