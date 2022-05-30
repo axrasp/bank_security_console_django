@@ -1,20 +1,18 @@
 import os
 
-from dotenv import load_dotenv
 from environs import Env
 
-load_dotenv()
 env = Env()
 env.read_env()
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'HOST': os.getenv('DATABASES_HOST'),
-        'PORT': os.getenv('DATABASES_PORT'),
-        'NAME': os.getenv('DATABASES_NAME'),
-        'USER': os.getenv('DATABASES_USER'),
-        'PASSWORD': os.getenv('DATABASES_PASSWORD'),
+        'HOST': env('DATABASES_HOST'),
+        'PORT': env('DATABASES_PORT'),
+        'NAME': env('DATABASES_NAME'),
+        'USER': env('DATABASES_USER'),
+        'PASSWORD': env('DATABASES_PASSWORD'),
 
     }
 }
