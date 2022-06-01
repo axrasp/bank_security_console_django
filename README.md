@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ```
 Now we need to connect your database.
 
-Сreate ``.env`` file in ``project`` folder and put sensitive data there:
+Create ``.env`` file in ``project`` folder and put sensitive data there:
 
 ```
 DATABASES_ENGINE="django.db.backends.postgresql_psycopg2"
