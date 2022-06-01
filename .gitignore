@@ -4,4 +4,6 @@
 *.DS-Store
 .DS_Store
 *.pyc
-.env
+project/.env
+poetry.lock
+pyproject.toml
